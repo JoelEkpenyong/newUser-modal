@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <!-- custom styles -->
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <title>GetViral | Admin's List</title>
+</head>
+<body>
+    
+    <!-- Start modals -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+    </button>
+    
+    <div class="modal fade modal1" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="w-100 row px-3">
+                        <div class="col-10 col-sm-11 text-center d-flex justify-content-start justify-content-sm-center align-items-center">
+                            <h5 class="modal-title pl-md-3 text_caption font-weight-bold" id="exampleModalLabel">Create New User</h5>
+                        </div>
+                        <div class="col-2 col-sm-1">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="text_larger font-weight-light" aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" placeholder="Username" class="form-control text_smaller" id="username">
+                            </div>
+                            <div class="form-group">
+                            <label for="emailAddress">Email address</label>
+                            <input type="email" placeholder="Email" class="form-control text_smaller" id="emailAddress" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                            <label for="password">Password</label>
+                            <div class="position-relative">
+                                <input type="password" placeholder="Password" class="form-control text_smaller" id="password">
+                                <span class="edit-button show-password position-absolute" onclick="showPassword()">
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.47059 2.82349C5.2338 2.82349 2.2985 4.80403 0.132556 8.02095C-0.0441853 8.28451 -0.0441853 8.65271 0.132556 8.91626C2.2985 12.1371 5.2338 14.1176 8.47059 14.1176C11.7074 14.1176 14.6427 12.1371 16.8086 8.92014C16.9854 8.65658 16.9854 8.28838 16.8086 8.02483C14.6427 4.80403 11.7074 2.82349 8.47059 2.82349ZM8.70278 12.4471C6.55416 12.5983 4.77981 10.6177 4.91497 8.21087C5.02587 6.22645 6.46406 4.61799 8.2384 4.49396C10.387 4.3428 12.1614 6.32334 12.0262 8.73022C11.9118 10.7108 10.4737 12.3192 8.70278 12.4471ZM8.59535 10.61C7.43786 10.6914 6.48138 9.62554 6.55762 8.33102C6.61654 7.26129 7.39281 6.39699 8.3493 6.32722C9.50678 6.24583 10.4633 7.31168 10.387 8.6062C10.3246 9.6798 9.54836 10.5441 8.59535 10.61Z" fill="#7B7B7B"/>
+                                    <path id="stroke" d="M1.479 1.479L14.9682 14.9682" stroke="#7B7B7B" stroke-width="1.5" stroke-linecap="square"/>
+                                </svg>
+                                </span>
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer pt-0 d-flex justify-content-center align-items-center">
+                    <button type="submit" class="bg_primary">
+                        <span class="font-weight-bold text_small text_light">Create</span> 
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- popper -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <!-- boostrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
